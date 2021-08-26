@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.0/phpunit.xsd"
+		 bootstrap="bootstrap.php"
+		 backupGlobals="false"
+		 backupStaticAttributes="false"
+		 colors="true"
+		 beStrictAboutCoversAnnotation="true"
+		 beStrictAboutOutputDuringTests="true"
+		 beStrictAboutTestsThatDoNotTestAnything="true"
+		 beStrictAboutTodoAnnotatedTests="true"
+		 convertErrorsToExceptions="true"
+		 convertNoticesToExceptions="true"
+		 convertWarningsToExceptions="true"
+		 processIsolation="false"
+		 stopOnFailure="false"
+		 verbose="true">
+
+	<testsuites>
+    <!--  Run tests on root project /tests folder using this config inside vendor/itcig/phpunit/..  -->
+		<testsuite name="Integration">
+			<directory suffix="Test.php">../../../../tests/phpunit/Integration</directory>
+		</testsuite>
+	</testsuites>
+
+	<groups>
+		<exclude>
+			<group>Exclude</group>
+		</exclude>
+	</groups>
+</phpunit>

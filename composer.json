@@ -1,0 +1,50 @@
+{
+  "name": "itcig/phpunit",
+  "description": "PHPUnit extender for bootstrapping unit and integration test suites.",
+  "type": "library",
+  "homepage": "https://github.com/itcig/itcig",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ITCIG",
+      "email": "it@capinfogroup.com",
+      "homepage": "https://github.com/itcig"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/itcig/itcig/issues",
+    "source": "https://github.com/itcig/itcig"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "monorepo": true
+      }
+    }
+  ],
+  "require": {
+    "php": "^7.2 || ^8",
+    "brain/monkey": "^2.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "require-dev": {
+    "itcig/php-codesniffer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cig\\PHPUnit\\": "."
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "vendor/antecedent/patchwork/Patchwork.php"
+    ]
+  }
+}
