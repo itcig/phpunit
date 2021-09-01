@@ -1,5 +1,7 @@
 <?php
 
+namespace Cig\PHPUnit\Integration;
+
 use Cig\PHPUnit\Integration\TestCase;
 use Brain\Monkey\Functions;
 
