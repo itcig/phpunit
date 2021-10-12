@@ -1,50 +1,68 @@
 {
-  "name": "itcig/phpunit",
-  "description": "PHPUnit extender for bootstrapping unit and integration test suites.",
-  "type": "library",
-  "homepage": "https://github.com/itcig/itcig",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "ITCIG",
-      "email": "it@capinfogroup.com",
-      "homepage": "https://github.com/itcig"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/itcig/itcig/issues",
-    "source": "https://github.com/itcig/itcig"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "sort-packages": true
-  },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../*",
-      "options": {
-        "monorepo": true
-      }
-    }
-  ],
-  "require": {
-    "php": "^7.2 || ^8",
-    "brain/monkey": "^2.0",
-    "phpunit/phpunit": "^9.0"
-  },
-  "require-dev": {
-    "itcig/php-codesniffer": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Cig\\PHPUnit\\": "."
-    }
-  },
-  "autoload-dev": {
-    "files": [
-      "vendor/antecedent/patchwork/Patchwork.php"
-    ]
-  }
+	"name": "itcig/phpunit",
+	"version": "0.1.1",
+	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
+	"type": "library",
+	"homepage": "https://github.com/itcig/phpunit",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ITCIG",
+			"email": "it@capinfogroup.com",
+			"homepage": "https://github.com/itcig"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/itcig/phpunit/issues",
+		"source": "https://github.com/itcig/phpunit"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"sort-packages": true
+	},
+	"repositories": [],
+	"scripts": {
+		"phpunit": [
+			"./vendor/phpunit/phpunit/phpunit --colors=always"
+		],
+		"test-coverage": [
+			"@composer update",
+			"phpdbg -d memory_limit=2048M -d max_execution_time=900 -qrr ./vendor/bin/phpunit --coverage-clover \"$COVERAGE_DIR/clover.xml\""
+		],
+		"test-php": [
+			"@composer update",
+			"@composer phpunit"
+		]
+	},
+	"require": {
+		"php": "^7.2 || ^8",
+		"brain/monkey": "^2.0",
+		"phpunit/phpunit": "^9.0"
+	},
+	"require-dev": {
+		"itcig/php-coding-standards": "^0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Cig\\PHPUnit\\": "."
+		}
+	},
+	"autoload-dev": {
+		"files": [
+			"vendor/antecedent/patchwork/Patchwork.php"
+		]
+	},
+	"extra": {
+		"autotagger": true,
+		"autorelease": true,
+		"mirror-repo": "itcig/phpunit",
+		"branch-alias": {
+			"dev-main": "0.1.x-dev"
+		},
+		"release-branch-prefix": "phpunit",
+		"version-constants": {
+			"PACKAGE_VERSION": "phpunit.php"
+		}
+	}
 }
