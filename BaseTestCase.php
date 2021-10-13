@@ -1,4 +1,9 @@
 <?php
+/**
+ * Foundation to build custom PHPUnit TestCase objects upon
+ *
+ * @package itcig/phpunit
+ */
 
 namespace Cig\PHPUnit;
 
@@ -7,19 +12,28 @@ use Cig\PHPUnit\Includes\ExpectOutputHelper;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class BaseTestCase
+ */
 class BaseTestCase extends TestCase {
-  use ExpectOutputHelper;
+    use ExpectOutputHelper;
 
-  // Adds Mockery expectations to the PHPUnit assertions count.
-  use MockeryPHPUnitIntegration;
+    // Adds Mockery expectations to the PHPUnit assertions count.
+    use MockeryPHPUnitIntegration;
 
-  protected function setUp(): void {
-    parent::setUp();
-    Monkey\setUp();
-  }
+    /**
+     * This method is called before each test.
+     */
+    protected function setUp(): void {
+        parent::setUp();
+        Monkey\setUp();
+    }
 
-  protected function tearDown(): void {
-    Monkey\tearDown();
-    parent::tearDown();
-  }
+    /**
+     * This method is called after each test.
+     */
+    protected function tearDown(): void {
+        Monkey\tearDown();
+        parent::tearDown();
+    }
 }
