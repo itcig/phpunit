@@ -1,5 +1,6 @@
 {
 	"name": "@itcig/phpunit",
+	"version": "0.1.1",
 	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
 	"homepage": "https://github.com/itcig/phpunit",
 	"bugs": {
