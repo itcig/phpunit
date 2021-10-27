@@ -18,20 +18,20 @@ use PHPUnit\Framework\TestCase;
 class BaseTestCase extends TestCase {
     use ExpectOutputHelper;
 
-    // Adds Mockery expectations to the PHPUnit assertions count.
+  // Adds Mockery expectations to the PHPUnit assertions count.
     use MockeryPHPUnitIntegration;
 
-    /**
-     * This method is called before each test.
-     */
+  /**
+   * This method is called before each test.
+   */
     protected function setUp(): void {
         parent::setUp();
         Monkey\setUp();
     }
 
-    /**
-     * This method is called after each test.
-     */
+  /**
+   * This method is called after each test.
+   */
     protected function tearDown(): void {
         Monkey\tearDown();
         parent::tearDown();
