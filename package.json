@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/phpunit",
-	"version": "0.2.14",
+	"version": "0.2.15",
 	"license": "MIT",
 	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
 	"author": {
@@ -10,8 +10,7 @@
 	"homepage": "https://github.com/itcig/phpunit",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/itcig/itcig.git",
-		"directory": "packages/php-packages/phpunit"
+		"url": "git+https://github.com/itcig/phpunit.git"
 	},
 	"scripts": {
 		"build": "echo 'Not implemented.'",

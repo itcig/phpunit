@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-### [0.2.14](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.2.13...@itcig/phpunit@0.2.14) (2021-10-27)
+### [0.2.15](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.2.14...@itcig/phpunit@0.2.15) (2021-10-27)
 
 **Note:** Version bump only for package @itcig/phpunit
 
@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file. See
 
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+### [0.2.14](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.2.13...@itcig/phpunit@0.2.14) (2021-10-27)
+
+**Note:** Version bump only for package @itcig/phpunit
 
 ### [0.2.13](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.2.12...@itcig/phpunit@0.2.13) (2021-10-27)
 
