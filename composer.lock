@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91ee70027c8c7a543fe2781b8f7e1be1",
+    "content-hash": "1c5b7e8a6c5568a5f7b19a5d50c6c4ec",
     "packages": [
         {
             "name": "antecedent/patchwork",
@@ -243,6 +243,52 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "itcig/php-helpers",
+            "version": "1.1.13",
+            "dist": {
+                "type": "path",
+                "url": "../php-helpers",
+                "reference": "c5b4eddc6ab485f69de831d6c52649ea31a7c4e6"
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/index.php"
+                ],
+                "psr-4": {
+                    "Cig\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ITCIG",
+                    "email": "it@capinfogroup.com",
+                    "homepage": "https://github.com/itcig"
+                }
+            ],
+            "description": "PHP helper methods",
+            "homepage": "https://github.com/itcig/phpunit",
+            "support": {
+                "issues": "https://github.com/itcig/php-helpers/issues",
+                "source": "https://github.com/itcig/php-helpers"
+            },
+            "transport-options": {
+                "monorepo": true,
+                "relative": true
+            }
         },
         {
             "name": "mockery/mockery",

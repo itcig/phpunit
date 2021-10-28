@@ -38,6 +38,7 @@
 	"require": {
 		"php": "^7.2 || ^8",
 		"brain/monkey": "^2.0",
+		"itcig/php-helpers": "^1.1",
 		"phpunit/phpunit": "^9.0"
 	},
 	"require-dev": {
