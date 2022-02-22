@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fe266011a28b914559dd4781435e102",
+    "content-hash": "d2e0ed4310d2a430059d0e995a371c1a",
     "packages": [
         {
             "name": "antecedent/patchwork",
@@ -246,19 +246,23 @@
         },
         {
             "name": "itcig/php-helpers",
-            "version": "1.1.16",
+            "version": "1.2.0",
             "dist": {
                 "type": "path",
                 "url": "../php-helpers",
-                "reference": "63451dbfe4ee1b214fca37ed7347948b9f302c68"
+                "reference": "fa66d0938a9a65474f3605f46567813e57ee8b7f"
             },
             "require": {
-                "php": "^7.2"
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "itcig/php-coding-standards": "^0.2",
+                "itcig/phpunit": "^0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.1.x-dev"
+                    "dev-main": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -268,6 +272,19 @@
                 "psr-4": {
                     "Cig\\": "src/"
                 }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cig\\Tests\\": "tests/phpunit"
+                }
+            },
+            "scripts": {
+                "phpunit": [
+                    "./vendor/bin/phpunit --colors=always"
+                ],
+                "test": [
+                    "@composer phpunit"
+                ]
             },
             "license": [
                 "MIT"
