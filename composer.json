@@ -1,6 +1,6 @@
 {
 	"name": "itcig/phpunit",
-	"version": "0.2.20",
+	"version": "0.2.21",
 	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
 	"type": "library",
 	"homepage": "https://github.com/itcig/phpunit",
