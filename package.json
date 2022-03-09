@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/phpunit",
-	"version": "0.2.21",
+	"version": "0.3.0-alpha.0",
 	"license": "MIT",
 	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
 	"author": {
