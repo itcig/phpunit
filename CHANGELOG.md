@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.2.21...@itcig/phpunit@0.3.0) (2022-03-10)
+
+
+### Features
+
+* **mocha-config-cig:** add jsdom dependency ([#10](https://github.com/itcig/itcig/issues/10)) ([087a25c](https://github.com/itcig/itcig/commit/087a25cefa6f4e445907f2251417eeb0377a8560))
+
+
+
 ### 0.2.21 (2022-03-08)
 
 **Note:** Version bump only for package @itcig/phpunit
