@@ -1,6 +1,6 @@
 {
 	"name": "itcig/phpunit",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "PHPUnit extender for bootstrapping unit and integration test suites.",
 	"type": "library",
 	"homepage": "https://github.com/itcig/phpunit",
@@ -44,7 +44,7 @@
 		"phpunit/phpunit": "^9.0"
 	},
 	"require-dev": {
-		"itcig/php-coding-standards": "^0.3"
+		"itcig/php-coding-standards": "^0.4"
 	},
 	"autoload": {
 		"psr-4": {
@@ -58,7 +58,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-main": "0.3.x-dev"
+			"dev-main": "0.4.x-dev"
 		}
 	}
 }
