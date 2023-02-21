@@ -5,4 +5,4 @@
  * @package itcig/phpunit
  */
 
-define('PACKAGE_VERSION', '0.4.0');
+define('PACKAGE_VERSION', '0.5.0');

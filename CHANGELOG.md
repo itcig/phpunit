@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.4.0...@itcig/phpunit@0.5.0) (2023-02-21)
+
+
+### Features
+
+* add new action for GCR upload no GKE deploy ([#37](https://github.com/itcig/itcig/issues/37)) ([3d8f2b4](https://github.com/itcig/itcig/commit/3d8f2b4279279986ed8b143efaa42ff849be1f20))
+
+
+
 ## [0.4.0](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.3.0...@itcig/phpunit@0.4.0) (2022-04-06)
 
 
