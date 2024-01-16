@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.5.0...@itcig/phpunit@0.6.0) (2024-01-16)
+
+
+### Features
+
+* update action syntax and dependencies ([#40](https://github.com/itcig/itcig/issues/40)) ([344b786](https://github.com/itcig/itcig/commit/344b78664e9298597bb128b62acb9d2b06376f5b))
+
+
+
 ## [0.5.0](https://github.com/itcig/itcig/compare/@itcig/phpunit@0.4.0...@itcig/phpunit@0.5.0) (2023-02-21)
 
 
